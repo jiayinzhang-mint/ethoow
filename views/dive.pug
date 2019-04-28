@@ -1,9 +1,9 @@
 extends layout
 
 block content
-  nav.main-nav.dark.js-sub-transparent.stick-fixed(style="margin-top:50px")
+  nav.main-nav-sub.small-height.dark.js-sub-transparent.stick-fixed(style="margin-top:55px;height:55px")
     .full-wrapper.relative.clearfix
-      .inner-nav.desktop-nav
+      .inner-nav-sub.desktop-nav-sub
         ul.clearlist.scroll-nav.local-scroll
           li.active
             a(href='#post-1') 跳伞流程
@@ -16,10 +16,11 @@ block content
           li
             a(href='#post-5') 常见问题
 
-  section.page-section-title.page-section.bg-dark-alfa-50(data-background="images/full-width-images/hero-5.jpeg")
+  section.page-section-title.page-section.bg-dark-alfa-50(data-background="images/full-width-images/hero-5.jpeg" style="padding-top:120px")
     .relative.container.align-left
       .row
         h1.hs-line-11.font-alt.mb-20.mb-xs-0 高空跳伞
+        h3.hs-line-4.text-white 流程 / 基地 / 团队 / 价格 / 常见问题
         
   .container.relative
     .row
@@ -324,6 +325,16 @@ block content
               p 高铁到达荆门站，滴滴到达基地（价格约60元）
               h4 酒店
               p 基地有房车，可提供住宿，具体咨询相关工作人员
+
+              h3(style="margin-top:90px")  浙江横店影视基地
+              div(id="amap10" class="map")
+
+              h4 基地位置
+              p 金华市东阳市横店镇
+              h4 跳伞高度
+              p 3300米
+              p 30秒自由落体
+              
             section.page-section(id="post-3")
               h2 教练团队
                 br
@@ -498,28 +509,28 @@ block content
 
       var map = new AMap.Map('amap6', {
         zoom: 15,
-        center: [117.099665,39.239973],
+        center: [117.320733,38.564854],
       });
       var marker = new AMap.Marker({
-        center: [117.099665,39.239973],
+        center: [117.320733,38.564854],
       })
       marker.setMap(map)
 
       var map = new AMap.Map('amap7', {
         zoom: 15,
-        center: [117.602955,36.434978],
+        center: [117.573362,36.43925],
       });
       var marker = new AMap.Marker({
-        center: [117.602955,36.434978],
+        center: [117.573362,36.43925],
       })
       marker.setMap(map)
 
       var map = new AMap.Map('amap8', {
         zoom: 15,
-        center: [104.153161,24.126167],
+        center: [104.327457,23.556829],
       });
       var marker = new AMap.Marker({
-        center: [104.153161,24.126167],
+        center: [104.327457,23.556829],
       })
       marker.setMap(map)
 
@@ -529,5 +540,14 @@ block content
       });
       var marker = new AMap.Marker({
         center: [112.07382,30.990064],
+      })
+      marker.setMap(map)
+
+      var map = new AMap.Map('amap10', {
+        zoom: 15,
+        center: [120.317456,29.138349],
+      });
+      var marker = new AMap.Marker({
+        center: [120.317456,29.138349],
       })
       marker.setMap(map)

@@ -1543,7 +1543,8 @@ a.logo:hover {
  * Desktop nav
  */
 
-.main-nav {
+.main-nav,
+.main-nav-sub {
   width: 100%;
   height: 75px !important;
   position: relative;
@@ -1551,10 +1552,9 @@ a.logo:hover {
   left: 0;
   text-align: left;
   background: rgba(255, 255, 255, 0.97);
-
-  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05);
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05);
 
   z-index: 1030;
 
@@ -1568,16 +1568,24 @@ a.logo:hover {
 .small-height {
   height: 55px !important;
 }
-.small-height .inner-nav ul li a {
+
+.small-height .inner-nav ul li a,
+.small-height .inner-nav-sub ul li a {
   height: 55px !important;
   line-height: 55px !important;
 }
-.inner-nav {
+.inner-nav,
+.inner-nav-sub {
   display: inline-block;
   position: relative;
   float: right;
 }
-.inner-nav ul {
+
+.nav-item {
+  color: white;
+}
+.inner-nav ul,
+.inner-nav-sub ul {
   float: right;
   margin: auto;
   font-size: 13px;
@@ -1592,8 +1600,14 @@ a.logo:hover {
   margin-left: 30px;
   position: relative;
 }
-.inner-nav ul li a {
-  color: rgb(65, 65, 65);
+.inner-nav-sub ul li {
+  float: left;
+  margin-left: 20px;
+  position: relative;
+}
+.inner-nav ul li a,
+.inner-nav-sub ul li a {
+  color: rgb(235, 235, 235);
   letter-spacing: 2px;
   display: inline-block;
   -moz-box-sizing: border-box;
@@ -1610,8 +1624,10 @@ a.logo:hover {
 .inner-nav ul > li:first-child > a {
 }
 .inner-nav ul li a:hover,
-.inner-nav ul li a.active {
-  color: rgb(230, 133, 42);
+.inner-nav ul li a.active,
+.inner-nav-sub ul li a:hover,
+.inner-nav-sub ul li a.active {
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
@@ -1657,6 +1673,7 @@ a.logo:hover {
 
 .mn-sub li a:hover,
 .inner-nav ul li .mn-sub li a:hover,
+.inner-nav-sub ul li .mn-sub li a:hover,
 .mn-sub li a.active {
   background: rgba(255, 255, 255, 0.09);
   color: #f5f5f5 !important;
@@ -1880,7 +1897,7 @@ a.logo:hover {
 }
 .mobile-nav:hover,
 .mobile-nav.active {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.11);
   color: #777;
 }
 .mobile-nav:active {
@@ -1922,28 +1939,36 @@ a.logo:hover {
  * Dark panel style
  */
 
-.main-nav.dark {
+.main-nav.dark,
+.main-nav-sub.dark {
   background-color: rgba(239, 121, 20, 0.95);
 
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
-.main-nav.dark .inner-nav ul > li > a {
+
+.main-nav.dark .inner-nav ul > li > a,
+.main-nav-sub.dark .inner-nav ul > li > a {
   color: rgba(255, 255, 255, 0.7);
 }
 .main-nav.dark .inner-nav ul > li > a:hover,
-.main-nav.dark .inner-nav ul > li > a.active {
+.main-nav.dark .inner-nav ul > li > a.active,
+.main-nav-sub.dark .inner-nav ul > li > a:hover,
+.main-nav-sub.dark .inner-nav ul > li > a.active {
   color: #fff;
 }
 
-.main-nav.dark .mobile-nav {
+.main-nav.dark .mobile-nav,
+.main-nav-sub.dark .mobile-nav {
   background-color: transparent;
   border-color: transparent;
   color: rgba(255, 255, 255, 0.9);
 }
 .main-nav.dark .mobile-nav:hover,
-.main-nav.dark .mobile-nav.active {
+.main-nav.dark .mobile-nav.active,
+.main-nav-sub.dark .mobile-nav:hover,
+.main-nav-sub.dark .mobile-nav.active {
   color: #fff;
 }
 
@@ -3847,7 +3872,7 @@ a.logo:hover {
   margin-bottom: 15px;
   font-size: 11px;
   text-decoration: none;
-  color: #aaa;
+  color: rgb(63, 62, 62);
 
   -webkit-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
   -moz-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
@@ -3860,7 +3885,7 @@ a.logo:hover {
 }
 .post-prev-text {
   margin-bottom: 22px;
-  color: #777;
+  color: rgb(68, 67, 67);
   font-size: 15px;
   font-weight: 300;
   line-height: 1.75;
@@ -6542,4 +6567,8 @@ section:hover .small-item-carousel .owl-next {
 td,
 th {
   padding: 10px !important;
+}
+
+.main-nav-sub {
+  z-index: 100;
 }

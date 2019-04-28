@@ -22,48 +22,53 @@ html
     .page-loader
       .loader Loading...
     div(class="page" id="top")
-      .top-bar
-        .container.clearfix
-          ul.top-links.right.tooltip-bot
-            li
-              a(href='tel:18616703224')
-                |  客服咨询 18616703224
-      nav.main-nav.js-stick.transparent
-        .container.relative.clearfix
+      //- .top-bar
+      //-   .container.clearfix
+      //-     ul.top-links.right.tooltip-bot
+      //-       li
+      //-         a(href='tel:18616703224')
+      //-           |  客服咨询 18616703224
+      nav.main-nav.main-nav-main.stick-fixed.transparent
+        .full-wrapper.relative.clearfix
           .nav-logo-wrap.local-scroll
             a.logo(href='mp-index.html')
               img(src='images/logo-dark.png', alt='')
           .mobile-nav
-            i.fa.fa-bars
+            i.fa.fa-bars(class="nav-item")
           .inner-nav.desktop-nav
             ul.clearlist
               li
-                a(href='/')
+                a(href='/' class="nav-item")
                   | 主页 
               li
-                a(href='/dive')
+                a(href='/dive' class="nav-item")
                   | 高空跳伞 
               li
-                a(href='/para')
+                a(href='/para' class="nav-item")
                   | 滑翔伞 
               li
-                a(href='/selffly')
+                a(href='/selffly' class="nav-item")
                   | 自驾飞行 
               li
-                a(href='/hunt')
+                a(href='/hunt' class="nav-item")
                   | 荒野狩猎 
               li
-                a(href='/fish')
+                a(href='/fish' class="nav-item")
                   | 远洋海钓 
               li
-                a(href='/waterdive')
+                a(href='/waterdive' class="nav-item")
                   | 潜水 
               li
-                a(href='/taobao')
+                a(href='/taobao' class="nav-item")
                   | 淘宝商城
               li
-                a(href='/about')
+                a(href='/about' class="nav-item")
                   | 关于我们
+              li
+                a(style="height:75px;line-height:75px" class="nav-item")
+
+              li
+                a( class="nav-item") 客服咨询 18616703224 (微信同号)
 
       block content
   

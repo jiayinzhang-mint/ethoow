@@ -152,11 +152,15 @@
 
     // Mobile menu style toggle
     if ($(window).width() <= 1024) {
-      $('.main-nav').addClass('mobile-on');
+      $('.main-nav-main').addClass('mobile-on');
+      $('.main-nav-sub').removeClass('mobile-on');
     } else if ($(window).width() > 1024) {
-      $('.main-nav').removeClass('mobile-on');
+      $('.main-nav-main').removeClass('mobile-on');
+      $('.main-nav-sub').removeClass('mobile-on');
+
       desktop_nav.show();
     }
+
   }
 
   function init_classic_menu() {
@@ -184,12 +188,15 @@
       if ($(window).scrollTop() > 10) {
         $('.js-transparent').removeClass('transparent');
         $('.js-sub-transparent').css('display', 'block');
+        $('.nav-item').css('color', 'grey');
         $('.main-nav, .nav-logo-wrap .logo, .mobile-nav').addClass(
           'small-height'
         );
       } else {
         $('.js-transparent').addClass('transparent');
         $('.js-sub-transparent').css('display', 'none');
+        $('.nav-item').css('color', 'white');
+
         $('.main-nav, .nav-logo-wrap .logo, .mobile-nav').removeClass(
           'small-height'
         );

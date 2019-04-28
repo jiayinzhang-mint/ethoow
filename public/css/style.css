@@ -2418,6 +2418,11 @@ a.logo:hover {
 
   padding: 140px 0 0 0;
 }
+
+.page-section-title {
+  padding: 140px 0;
+}
+
 .small-section {
   padding: 70px 0;
 }

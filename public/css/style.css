@@ -8,8 +8,6 @@ Last change:    22.11.2017
 Primary use:    MultiPurpose Template  
 -------------------------------------------------------------------*/
 
-@import 'font-awesome.min.css';
-@import 'et-line.css';
 
 /*------------------------------------------------------------------
 [Table of contents]
@@ -1522,7 +1520,7 @@ a.bg-video-button-muted {
   transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
 }
 .nav-logo-wrap .logo img {
-  max-height: 100%;
+  max-height: 70%;
 }
 .nav-logo-wrap .logo:before,
 .nav-logo-wrap .logo:after {

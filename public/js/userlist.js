@@ -28,4 +28,4 @@ setInterval(() => {
     }
     startId += length;
   }
-}, 5000);
+}, 3000);

@@ -10,3 +10,44 @@ block content
             h2.hs-line-14.font-alt.mb-50.mb-xs-30  以太户外俱乐部
             .local-scroll
               a.btn.btn-mod.btn-border-w.btn-medium.btn-round.hidden-xs(href='/dive') 高空跳伞
+              
+              
+  #home.home-section.fullwidth-slider.bg-dark
+    section.home-section.bg-scroll.fixed-height-small.bg-dark-alfa-50(data-background='images/full-width-images/hero-2.png')
+      .js-height-parent.container
+        .home-content
+          .home-text
+            div
+              a.big-icon-link.lightbox-gallery-1.mfp-iframe(href='https://v.qq.com/txp/iframe/player.html?vid=h0865vurtje')
+                span.big-icon
+                  i.fa.fa-play
+            .hs-line-8.no-transp.font-alt.mb-40.mb-xs-10
+              | 高空跳伞
+    section.home-section.bg-scroll.fixed-height-small.bg-dark-alfa-50(data-background='images/full-width-images/hero-4.jpeg')
+      .js-height-parent.container
+        .home-content
+          .home-text
+            div
+              a.big-icon-link.lightbox-gallery-1.mfp-iframe(href='https://v.qq.com/txp/iframe/player.html?vid=t0865vlav4e')
+                span.big-icon
+                  i.fa.fa-play
+            .hs-line-8.no-transp.font-alt.mb-40.mb-xs-10
+              | 直升机花式跳伞
+    section.home-section.bg-scroll.fixed-height-small.bg-dark-alfa-50(data-background='images/full-width-images/hero-5.jpeg')
+      .js-height-parent.container
+        .home-content
+          .home-text
+            div
+              a.big-icon-link.lightbox-gallery-1.mfp-iframe(href='https://v.qq.com/txp/iframe/player.html?vid=f0865xy35p7')
+                span.big-icon
+                  i.fa.fa-play
+            .hs-line-8.no-transp.font-alt.mb-40.mb-xs-10
+              | 千里之巅 高空跳伞
+  script.
+   
+    var videoBox = document.getElementById('video')
+    console.log(videoBox.getBoundingClientRect().width)
+    videoBox.style.height=(videoBox.getBoundingClientRect().width/16*9).toFixed(0)+'px'
+    console.log(videoBox.style.height)    
+   
+

@@ -231,7 +231,8 @@
         $('#mobile-taobao').css('display', 'block');
         // $('.footer-social').css('width', '80%');
         $('.footer-social-1').css('margin-left', '15px');
-        $('.footer-social-2').css('margin-left', '0px');
+        $('.footer-social-2').css('margin-left', '0
+        px');
         $('.footer-social-1').css('padding', '30px 0 30px 20px');
         $('.footer-social-2').css('padding', '30px 0 30px 20px');
         // $('.page-title-text').css('display', 'none');

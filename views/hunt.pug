@@ -1,31 +1,37 @@
 extends layout
 
 block content
-  nav.main-nav-sub.small-height.dark.js-sub-transparent.stick-fixed(style="margin-top:55px")
-    .full-wrapper.relative.clearfix
-      .inner-nav-sub.desktop-nav-sub
-        ul.clearlist.scroll-nav.local-scroll
-          li.active
-            a(href='#post-1') 乌克兰
-          li
-            a(href='#post-2') 蒙古
-          li
-            a(href='#post-3') 俄罗斯
-          li
-            a(href='#post-4') 南非
-          li
-            a(href='#post-5') 加拿大
+
 
 
   section.page-section-title.page-section.bg-dark-alfa-50(data-background="images/full-width-images/狩猎.jpg" style="padding-top:200px")
-    .relative.container.align-left
+    .relative.container.align-left(class="page-title-text")
       .row
         h1.hs-line-11.font-alt.mb-20.mb-xs-0 荒野狩猎
         h3.hs-line-4.text-white 乌克兰 / 蒙古 / 俄罗斯 / 南非 / 加拿大
 
   .container.relative
     .row
-      .col-sm-8.col-md-offset-1
+      .col-sm-3
+        section.page-section(style="margin-top:-100px" class="sidebar-widget-coll")
+          .widget(class="sidebar-widget")
+            .widget-body(style='text-align:center')
+              h1(style="color:#f08020") 荒野狩猎
+              h3 HUNTING
+          .widget
+            .widget-body
+              ul.clearlist.widget-menu.scroll-nav.local-scroll
+                li(class="sidebar-menu-li")
+                  a(href='#post-1' class="sidebar-menu-e" ) 多情乌克兰狩猎之旅
+                li(class="sidebar-menu-li")
+                  a(href='#post-2' class="sidebar-menu-e" ) 铁血蒙古国狩猎之旅
+                li(class="sidebar-menu-li")
+                  a(href='#post-3' class="sidebar-menu-e" ) 野性俄罗斯西伯利亚狩猎之旅
+                li(class="sidebar-menu-li")
+                  a(href='#post-4' class="sidebar-menu-e" ) 梦幻南非狩猎尊享体验    
+                li(class="sidebar-menu-li")
+                  a(href='#post-5' class="sidebar-menu-e" ) 加拿大猎熊之旅   
+      .col-sm-8
         .blog-item.mb-80.mb-xs-40
           .blog-item-body
             section.page-section(id="post-1" style="margin-top:-120px")

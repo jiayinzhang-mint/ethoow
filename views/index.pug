@@ -22,7 +22,7 @@ block content
 
     }
   link(rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css")
-  section.home-section.parallax-2.bg-dark-alfa-30(data-background='images/full-width-images/hero-1.jpg' style="height:1400px;background-attachment: fixed;")
+  section.home-section.parallax-2.bg-dark-alfa-30(data-background='images/full-width-images/hero-1.jpg' id="main-head" style="height:1400px;background-attachment: fixed;")
     .fullwidth-slider.owl-carousel
       .js-height-full.container
         .home-content
@@ -34,8 +34,8 @@ block content
   .container
     .row.align-center
       .col-sm-12
-       
-        div(id="app" )
+        
+        div(id="app")
           img(style="width: 500px;margin-bottom:0px " src="images/水印.png"  )
           el-carousel(:interval="4000" type="card")
             el-carousel-item
@@ -57,6 +57,528 @@ block content
                     i.fa.fa-play
               img(src="images/slider/slider-3.jpg")
 
+        .row(style="padding-top:40px" id="mobile-taobao")  
+          .col-sm-8
+            h3(style="padding-bottom:30px;color:#f08020") 淘宝商城
+            .row.multi-columns-row
+              
+              .col-xs-6.col-md-4.col-lg-4.mb-60.mb-xs-40
+                .post-prev-img
+                  img(src='images/project/跳伞.jpg', alt='')
+                .post-prev-title.font-alt.align-center
+                  a(href='https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-18753653155.60.7bdc380d3Mrnks&id=571105764606' style="margin-top:-20px") 高空跳伞
+                  br
+                  div(style="height:10px")
+                  b(style="color:#ff0000" ) ￥2800
+                  br
+                  a(href='https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-18753653155.60.7bdc380d3Mrnks&id=571105764606' style="margin-top:-20px")
+                    button.btn-danger 立即购买
+
+              .col-xs-6.col-md-4.col-lg-4.mb-60.mb-xs-40
+                .post-prev-img
+                  img(src='images/project/高空摄像.jpg', alt='')
+                .post-prev-title.font-alt.align-center
+                  a(href='https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-18753653155.57.7bdc380d3Mrnks&id=571288681024') 高空摄像
+                  br
+                  div(style="height:10px")
+                  b(style="color:#ff0000" ) ￥2400
+                  br
+                  a(href='https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-18753653155.57.7bdc380d3Mrnks&id=571288681024') 
+                    button.btn-danger 立即购买
+
+              .col-xs-6.col-md-4.col-lg-4.mb-60.mb-xs-40
+                .post-prev-img
+                  img(src='images/project/滑翔伞.jpg', alt='')
+                .post-prev-title.font-alt.align-center
+                  a(href='https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-18753653155.66.7bdc380d3Mrnks&id=571871243786') 滑翔伞
+                  br
+                  div(style="height:10px")
+                  b(style="color:#ff0000" ) ￥14000
+                  br
+                  a(href='https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-18753653155.66.7bdc380d3Mrnks&id=571871243786') 
+                    button.btn-danger 立即购买 
+
+              .col-xs-6.col-md-4.col-lg-4.mb-60.mb-xs-40
+                .post-prev-img
+                  img(src='images/project/潜水.jpg', alt='')
+                .post-prev-title.font-alt.align-center
+                  a(href='https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-18753653155.120.713f380dXnuYuU&id=594019895236') 潜水
+                  br
+                  div(style="height:10px")
+                  b(style="color:#ff0000" ) ￥650
+                  br
+                  a(href='https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-18753653155.120.713f380dXnuYuU&id=594019895236')
+                    button.btn-danger 立即购买     
+
+              .col-xs-6.col-md-4.col-lg-4.mb-60.mb-xs-40
+                .post-prev-img
+                  img(src='images/project/狩猎.jpg', alt='')
+                .post-prev-title.font-alt.align-center
+                  a(href='https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-18753653155.69.7bdc380d3Mrnks&id=577044328265') 狩猎
+                  br
+                  div(style="height:10px")
+                  b(style="color:#ff0000" ) ￥55000
+                  br
+                  a(href='https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-18753653155.69.7bdc380d3Mrnks&id=577044328265') 
+                    button.btn-danger 立即购买
+
+              .col-xs-6.col-md-4.col-lg-4.mb-60.mb-xs-40
+                .post-prev-img
+                  img(src='images/project/自驾飞行.jpg', alt='')
+                .post-prev-title.font-alt.align-center
+                  a(href='https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-18753653155.72.7bdc380d3Mrnks&id=576811849952') 自驾飞行
+                  br
+                  div(style="height:10px")
+                  b(style="color:#ff0000" ) ￥9800
+                  br
+                  a(href='https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-18753653155.72.7bdc380d3Mrnks&id=576811849952') 
+                    button.btn-danger 立即购买                
+              .col-xs-6.col-md-4.col-lg-4.mb-60.mb-xs-40
+                .post-prev-img
+                  img(src='images/project/远洋海钓.jpg', alt='')
+                .post-prev-title.font-alt.align-center
+                  a(href='https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-18753653155.117.713f380dXnuYuU&id=594020707646') 远洋海钓
+                  br
+                  div(style="height:10px")
+                  b(style="color:#ff0000" ) ￥50000
+                  br
+                  a(href='https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-18753653155.117.713f380dXnuYuU&id=594020707646') 
+                    button.btn-danger 立即购买                
+              .col-xs-6.col-md-4.col-lg-4.mb-60.mb-xs-40
+                .post-prev-img
+                  img(src='images/project/会员注册.png', alt='')
+                .post-prev-title.font-alt.align-center
+                  a(href='https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-18753653155.90.7bdc380d8PtLIl&id=592782887864') 会员注册
+                  br
+                  div(style="height:10px")
+                  b(style="color:#ff0000" ) ￥78000
+                  br
+                  a(href='https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-18753653155.90.7bdc380d8PtLIl&id=592782887864') 
+                    button.btn-danger 立即购买                
+              .col-xs-6.col-md-4.col-lg-4.mb-60.mb-xs-40
+                .post-prev-img
+                  img(src='images/project/补充差价.jpg', alt='')
+                .post-prev-title.font-alt.align-center
+                  a(href='https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-18753653155.93.7bdc380d8PtLIl&id=581579813582') 差价补充
+                  br
+                  div(style="height:10px")
+                  b(style="color:#ff0000" ) ￥1
+                  br
+                  a(href='https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-18753653155.93.7bdc380d8PtLIl&id=581579813582')
+                    button.btn-danger 立即购买                
+
+          .col-sm-4.col-md-3.col-md-offset-1.sidebar
+            .widget
+              h5.widget-title.font-alt 近期动态
+              .widget-body
+                ul(id="userList" class="clearlist widget-posts")
+                  li(class="userList-item")
+                      a(href='#')
+                          | 朱先生(187****3507)预订成功自驾飞行
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 韩女士(132****0506)预订成功高空跳伞
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 何女士(158****7672)预订成功高空摄像
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 水先生(189****5240)预订成功潜水
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 沈先生(182****6344)预订成功滑翔伞
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 金先生(138****1436)预订成功潜水
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 严女士(158****8167)预订成功高空跳伞
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 陶女士(134****8958)预订成功滑翔伞
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 喻先生(130****7028)预订成功高空摄像
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 李先生(159****9289)预订成功潜水
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 章先生(136****5335)预订成功自驾飞行
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 喻女士(156****0801)预订成功潜水
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 吴女士(150****5196)预订成功高空摄像
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 吴女士(135****6244)预订成功高空摄像
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 魏女士(156****3870)预订成功潜水
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 杨先生(150****7492)预订成功高空跳伞
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 章先生(139****4502)预订成功潜水
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 柏女士(134****5109)预订成功滑翔伞
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 吕女士(183****4988)预订成功滑翔伞
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 魏女士(150****4749)预订成功自驾飞行
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 吕女士(133****6108)预订成功高空摄像
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 郑女士(131****6570)预订成功远洋海钓
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 韩先生(184****3174)预订成功远洋海钓
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 陈女士(136****9039)预订成功高空跳伞
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 孙先生(139****7091)预订成功远洋海钓
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 张女士(135****3620)预订成功高空摄像
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 谢女士(153****0316)预订成功高空跳伞
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 许先生(151****3747)预订成功远洋海钓
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 曹女士(134****7486)预订成功自驾飞行
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 杨女士(138****3823)预订成功狩猎
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 陈女士(135****7622)预订成功潜水
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 沈女士(181****6973)预订成功潜水
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 尤女士(152****1834)预订成功滑翔伞
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 钱先生(130****3113)预订成功远洋海钓
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 邹先生(134****4567)预订成功高空跳伞
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 姜先生(131****9324)预订成功潜水
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 章女士(184****5785)预订成功远洋海钓
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 尤女士(130****2244)预订成功高空摄像
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 金女士(183****2227)预订成功滑翔伞
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 吕女士(139****9142)预订成功狩猎
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 郑先生(151****0772)预订成功自驾飞行
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 吕女士(132****2254)预订成功自驾飞行
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 钱先生(153****4267)预订成功高空摄像
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 魏女士(157****6637)预订成功高空跳伞
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 陈先生(137****6003)预订成功狩猎
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 冯女士(132****6881)预订成功自驾飞行
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 姜先生(132****1797)预订成功高空跳伞
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 朱先生(131****2256)预订成功高空摄像
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 钱先生(132****2142)预订成功狩猎
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 郑女士(185****7735)预订成功远洋海钓
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 吕女士(136****4494)预订成功高空摄像
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 张女士(151****2555)预订成功自驾飞行
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 杨先生(139****6713)预订成功滑翔伞
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 曹女士(135****9998)预订成功高空跳伞
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 孔女士(150****9012)预订成功远洋海钓
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 孔女士(134****6091)预订成功滑翔伞
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 陶先生(150****0910)预订成功狩猎
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 郑女士(153****4557)预订成功高空摄像
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 沈女士(183****3888)预订成功高空跳伞
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 许先生(187****8330)预订成功高空跳伞
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 水女士(137****0488)预订成功滑翔伞
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 戚先生(154****3430)预订成功高空跳伞
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 李女士(136****5567)预订成功高空摄像
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 魏女士(159****3594)预订成功狩猎
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 邹先生(158****0419)预订成功滑翔伞
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 许先生(154****2555)预订成功自驾飞行
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 卫先生(131****8464)预订成功滑翔伞
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 章先生(187****0466)预订成功狩猎
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 谢先生(180****9145)预订成功狩猎
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 郑女士(184****7993)预订成功高空跳伞
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 孔先生(155****7206)预订成功滑翔伞
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 柏女士(135****5382)预订成功高空跳伞
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 柏先生(151****2854)预订成功高空跳伞
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 张女士(159****4293)预订成功自驾飞行
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 柏女士(137****3090)预订成功潜水
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 严先生(189****6191)预订成功高空摄像
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 吴女士(133****9180)预订成功远洋海钓
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 吕女士(183****6141)预订成功狩猎
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 窦女士(186****8796)预订成功高空摄像
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 杨女士(130****6295)预订成功狩猎
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 窦女士(188****6665)预订成功滑翔伞
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 窦先生(130****9292)预订成功狩猎
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 华先生(184****6902)预订成功滑翔伞
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 秦先生(158****8719)预订成功远洋海钓
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 王先生(188****7036)预订成功自驾飞行
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 蒋女士(134****4124)预订成功潜水
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 戚女士(155****4071)预订成功远洋海钓
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 金先生(138****5763)预订成功高空跳伞
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 尤女士(189****1167)预订成功潜水
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 严先生(158****9299)预订成功潜水
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 金女士(158****6701)预订成功自驾飞行
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 赵女士(137****9764)预订成功自驾飞行
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 李女士(180****1814)预订成功远洋海钓
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 魏女士(138****5240)预订成功自驾飞行
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 杨女士(180****0270)预订成功高空跳伞
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 戚先生(183****7472)预订成功高空摄像
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 华先生(139****6583)预订成功高空摄像
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 柏先生(135****3428)预订成功高空跳伞
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 蒋女士(186****5137)预订成功狩猎
+
+                  li(class="userList-item")
+                      a(href='#')
+                          | 王先生(185****0974)预订成功远洋海钓
+
+
+
+
+
+  script(src="js/userlist.js")
+              
+
   script(src="https://unpkg.com/vue/dist/vue.js")
   script(src="https://unpkg.com/element-ui/lib/index.js")
   script.
@@ -67,42 +589,5 @@ block content
           }
     })
 
-  //- div(id="carousel")
-  //-   img(src="images/slider/slider-1.png" alt="Image 2")
-  //-   img(src="images/slider/slider-1.png" alt="Image 2")
-  //-   img(src="images/slider/slider-1.png" alt="Image 2")
-  //- script(type='text/javascript', src='https://cdn.staticfile.org/jquery/1.11.2/jquery.min.js')
-  //- script.
-  
-  //-   $(document).ready(function() {
-  //-     $("#carousel").waterwheelCarousel({
-  //-     flankingItems: 3,
-  //-       movingToCenter: function ($item) {
-  //-         $('#callback-output').prepend('movingToCenter: ' + $item.attr('id') + '<br/>');
-  //-       },
-  //-       movedToCenter: function ($item) {
-  //-         $('#callback-output').prepend('movedToCenter: ' + $item.attr('id') + '<br/>');
-  //-       },
-  //-       movingFromCenter: function ($item) {
-  //-         $('#callback-output').prepend('movingFromCenter: ' + $item.attr('id') + '<br/>');
-  //-       },
-  //-       movedFromCenter: function ($item) {
-  //-         $('#callback-output').prepend('movedFromCenter: ' + $item.attr('id') + '<br/>');
-  //-       },
-  //-       clickedCenter: function ($item) {
-  //-         $('#callback-output').prepend('clickedCenter: ' + $item.attr('id') + '<br/>');
-  //-       }
-  //-   });
-  //-   });
-  //- style(type='text/css').
-  //-   #carousel {
-  //-   width:100%;
-  //-   height: 0;
-  //-   bottom:300px;
-  //-   position: relative;
-  //-   }
-  //-   #carousel img {
-  //-   display: hidden; /* hide images until carousel prepares them */
-  //-   cursor: pointer; /* not needed if you wrap carousel items in links */
-  //-   }
+
 

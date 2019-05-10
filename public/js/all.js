@@ -232,7 +232,7 @@
         $('.footer-social').css('width', '80%');
         $('.footer-social').css('margin', '0');
         // $('.page-title-text').css('display', 'none');
-        $('.page-section-title').css('padding-top', width/5);
+        $('.page-section-title').css('padding-top', $(window).width()/5);
       }
     });
 

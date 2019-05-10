@@ -2425,7 +2425,7 @@ a.logo:hover {
 	display: block;
 	position: relative;
 	overflow: hidden;
-	background-attachment: fixed;
+	/* background-attachment: fixed; */
 	background-repeat: no-repeat;
 	background-position: center center;
 
@@ -2579,7 +2579,7 @@ a.logo:hover {
 }
 
 .bg-dark {
-	background-color: #FF5C00;
+	background-color: #f08020;
 }
 .bg-dark-lighter {
 	background-color: #252525;
@@ -2612,7 +2612,7 @@ a.logo:hover {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: rgba(34, 34, 34, 0.5);
+	/* background: rgba(34, 34, 34, 0.5); */
 }
 .bg-dark-alfa-70:before,
 .bg-dark-alfa-70 .YTPOverlay:before {
@@ -3829,7 +3829,7 @@ a.logo:hover {
 .post-grid {
 }
 .post-prev-img {
-	margin-bottom: 23px;
+	margin-bottom: 5px;
 	position: relative;
 }
 .post-prev-img a {
@@ -6573,22 +6573,51 @@ th {
 .float-card {
 	position: fixed;
 	right: 20px;
-	bottom: 200px;
+	bottom: 300px;
 	width: 130px;
 	padding: 5px 5px;
-	background: #fff;
+	background: #f08020;
 	z-index: 9999;
 	border-radius: 5px;
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+	height: 240px;
 }
 
 @media all and (max-width: 767px) {
 	.float-card {
 		visibility: hidden;
 	}
+	.sidebar-menu-coll{
+		display: none !important
+	}
 }
 
 .owl-item {
 	height: 100%;
+}
+
+.sidebar-menu-li {
+	border-bottom: 1px solid grey;
+	text-align: center;
+}
+
+.sidebar-menu-li.active {
+	border-bottom: 2px solid #f08020;
+}
+
+.sidebar-menu-e {
+	color: #f08020 !important;
+	font-size: 20px;
+}
+
+.sidebar-menu-e:hover {
+	color: #a7a7a7 !important;
+}
+
+.sidebar-widget {
+	padding-top: 20px;
+	border: 2px solid grey;
+	margin-bottom: 10px;
+	padding-bottom: 20px;
 }

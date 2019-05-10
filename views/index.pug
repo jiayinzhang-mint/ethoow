@@ -16,13 +16,13 @@ block content
     background-color: #d3dce6;
     }
     #app{
-      bottom:400px;
+      bottom:500px;
       position:relative;
       height:0;
 
     }
   link(rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css")
-  section.home-section.parallax-2.bg-dark-alfa-30(data-background='images/full-width-images/hero-1.jpg' style="height:1400px")
+  section.home-section.parallax-2.bg-dark-alfa-30(data-background='images/full-width-images/hero-1.jpg' style="height:1400px;background-attachment: fixed;")
     .fullwidth-slider.owl-carousel
       .js-height-full.container
         .home-content
@@ -34,26 +34,28 @@ block content
   .container
     .row.align-center
       .col-sm-12
-        div(id="app")
+       
+        div(id="app" )
+          img(style="width: 500px;margin-bottom:0px " src="images/水印.png"  )
           el-carousel(:interval="4000" type="card")
             el-carousel-item
               div(style="position:absolute;left:42%;top:30%")
                 a.big-icon-link.lightbox-gallery-1.mfp-iframe(href='https://v.qq.com/txp/iframe/player.html?vid=h0865vurtje')
                   span.big-icon
                     i.fa.fa-play
-              img(src="images/slider/slider-1.png")
+              img(src="images/slider/slider-1.jpg")
             el-carousel-item
               div(style="position:absolute;left:42%;top:30%")
                 a.big-icon-link.lightbox-gallery-1.mfp-iframe(href='https://v.qq.com/txp/iframe/player.html?vid=t0865vlav4e')
                   span.big-icon
                     i.fa.fa-play
-              img(src="images/slider/slider-1.png")
+              img(src="images/slider/slider-2.jpg")
             el-carousel-item
               div(style="position:absolute;left:42%;top:30%")
                 a.big-icon-link.lightbox-gallery-1.mfp-iframe(href='https://v.qq.com/txp/iframe/player.html?vid=f0865xy35p7')
                   span.big-icon
                     i.fa.fa-play
-              img(src="images/slider/slider-1.png")
+              img(src="images/slider/slider-3.jpg")
 
   script(src="https://unpkg.com/vue/dist/vue.js")
   script(src="https://unpkg.com/element-ui/lib/index.js")

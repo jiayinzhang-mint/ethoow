@@ -1,22 +1,8 @@
 extends layout
 
 block content
-  nav.main-nav-sub.small-height.dark.js-sub-transparent.stick-fixed(style="margin-top:55px;height:55px")
-    .full-wrapper.relative.clearfix
-      .inner-nav-sub.desktop-nav-sub
-        ul.clearlist.scroll-nav.local-scroll
-          li.active
-            a(href='#post-1') 流程
-          li
-            a(href='#post-2') 基地
-          li
-            a(href='#post-3') 团队
-          li
-            a(href='#post-4') 价格
-          li
-            a(href='#post-5') 常见问题
 
-  section.page-section-title.page-section.bg-dark-alfa-50(data-background="images/full-width-images/hero-5.jpeg" style="padding-top:200px")
+  section.page-section-title.page-section.bg-dark-alfa-50(data-background="images/full-width-images/高空跳伞.png" style="padding-top:200px")
     .relative.container.align-left
       .row
         h1.hs-line-11.font-alt.mb-20.mb-xs-0 高空跳伞
@@ -24,7 +10,26 @@ block content
         
   .container.relative
     .row
-      .col-sm-8.col-md-offset-1
+      .col-sm-3
+        section.page-section(style="margin-top:-100px" class="sidebar-widget-coll")
+          .widget(class="sidebar-widget")
+            .widget-body(style='text-align:center')
+              h1(style="color:#f08020") 高空跳伞
+              h3 SKYDIVE
+          .widget
+            .widget-body
+              ul.clearlist.widget-menu.scroll-nav.local-scroll
+                li(class="sidebar-menu-li")
+                  a(href='#post-1' class="sidebar-menu-e" ) 跳伞流程
+                li(class="sidebar-menu-li")
+                  a(href='#post-2' class="sidebar-menu-e" ) 跳伞基地
+                li(class="sidebar-menu-li")
+                  a(href='#post-3' class="sidebar-menu-e" ) 教练团队
+                li(class="sidebar-menu-li")
+                  a(href='#post-4' class="sidebar-menu-e" ) 跳伞价格
+                li(class="sidebar-menu-li")
+                  a(href='#post-5' class="sidebar-menu-e" ) 常见问题   
+      .col-sm-8
         .blog-item.mb-80.mb-xs-40
           .blog-item-body              
             section.page-section(id="post-1" style="margin-top:-120px")
@@ -364,7 +369,7 @@ block content
                 br
               .container.relative
                 .row
-                  .col-sm-6
+                  .col-sm-8
                     .row.masonry
                       .col-md-6.col-lg-6.mb-60.mb-xs-40
                         .post-prev-img
@@ -440,9 +445,9 @@ block content
               p 全国统一价2880元每人
               p 费用包含：跳伞前培训、教练团队服务、跳伞飞机乘坐、跳伞装备使用（伞具，护目镜，跳伞服等）以及最高保额50~100万的保险。
               h3 高空摄像
-              p 手持摄像 ￥2400
+              p 手持摄像 ￥800
               p 手持摄像是由固定在你的带跳教练手上的高清运动摄像机进行拍摄
-              p 第三方摄像（包括手持摄像）￥800
+              p 第三方摄像（包括手持摄像）￥2400
               p 带跳教练以外的专业跳伞摄像师与你一起跳下，摄影师的跳伞头盔上安装有先进的数字录像设备，为你一对一服务
               p 摄像服务包含：
               p 拍摄的原视频，照片，专业编辑配乐后的视频
@@ -457,7 +462,7 @@ block content
               h4 如果天气不适合跳伞会怎样安排？
               p 跳伞是一项特别受天气影响的运动，请务必给自己预留2到3天停留的时间。由于跳伞存在很多不可抗力因素，如天气和空军管制。遇到特殊情况，我们的工作人员会及时与您沟通，进行调整。
               br
-              h3 预订，行程
+              h3 预订行程
               h4 我需要提前预订吗？
               p 请至少提前一周预约。我们将根据您的具体情况和基地天气要求安排最合适的跳伞时间，同时预订以支付预定金为准。
               h4 整个跳伞活动需要多久的时间？
@@ -485,10 +490,10 @@ block content
 
   script(type='text/javascript',src="https://webapi.amap.com/maps?v=1.4.14&key=219668ef90f201a33be6a18982a16f6e")
   script.
-      var videoBox = document.getElementById('video')
-      console.log(videoBox.getBoundingClientRect().width)
-      videoBox.style.height=(videoBox.getBoundingClientRect().width/16*9).toFixed(0)+'px'
-      console.log(videoBox.style.height)
+      //- var videoBox = document.getElementById('video')
+      //- console.log(videoBox.getBoundingClientRect().width)
+      //- videoBox.style.height=(videoBox.getBoundingClientRect().width/16*9).toFixed(0)+'px'
+      //- console.log(videoBox.style.height)
       var map = new AMap.Map('amap_all', {
         center: [113.788761, 36.021357],
       });   
@@ -504,6 +509,7 @@ block content
           [112.07382,30.990064],
           [120.317456,29.138349]
       ]
+      console.log(locationList)
       for (let i =0 ;i<locationList.length;i++){
         console.log(locationList[i])
         var marker = new AMap.CircleMarker({

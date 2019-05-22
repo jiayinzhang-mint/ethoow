@@ -37,7 +37,24 @@ html
           .mobile-nav
             i.fa.fa-bars(class="nav-item")
           .inner-nav.desktop-nav
-            ul.clearlist
+            ul.clearlist(id="nav1")
+              li
+                a(href='/' class="nav-item")
+                  | 主页 
+              li
+                a(href='/dive' class="nav-item")
+                  | 高空跳伞 
+              
+              li
+                a(href='/about' class="nav-item")
+                  | 关于我们
+              li
+                a(style="height:75px;line-height:75px" class="nav-item")
+
+              li
+                a( class="nav-item") 客服咨询 18616703224 (微信同号)
+
+            ul.clearlist(id="nav2")
               li
                 a(href='/' class="nav-item")
                   | 主页 
@@ -87,6 +104,7 @@ html
             .col-sm-6.col-md-2(class="nomobile")
               .widget(style="margin-bottom:0")
                 .widget-body
+
                   ul.clearlist.widget-menu
                     li
                       a(class="link" href='/' style="color:white")
@@ -208,4 +226,17 @@ html
               });
           });
       })(jQuery);
+      console.log(window.location.host.search("zhongguotiaosan"))
+      if(window.location.host.search("zhongguotiaosan")!= -1){
+        $("title").html("中国跳伞")
+        $("#nav1").show()
+        $("#nav2").hide()
+        
+      }
+      else{
+        $("title").html("Ethoow")
+        $("#nav2").show()
+        $("#nav1").hide()
+
+      }
 

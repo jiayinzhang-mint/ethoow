@@ -211,15 +211,23 @@
         );
       }
       var width = $('.sidebar-widget-coll').width();
-      console.log(width);
+      
       if ($(window).width() > 768) {
         if ($(window).scrollTop() > 400) {
           $('.sidebar-widget-coll').css('position', 'fixed');
           $('.sidebar-widget-coll').css('width', width);
           $('.sidebar-widget-coll').css('bottom', '350px');
+          $('.sidebar-widget-coll').show()
+          
         } else {
+          // $('.sidebar-widget-coll').css('position', 'fixed');
+          // $('.sidebar-widget-coll').css('width', width);
+          // $('.sidebar-widget-coll').css('bottom', '50px');
+
           $('.sidebar-widget-coll').css('position', 'relative');
           $('.sidebar-widget-coll').css('bottom', '0');
+          $('.sidebar-widget-coll').hide()
+          
         }
         $('#mobile-taobao').css('display', 'none');
       } else {
